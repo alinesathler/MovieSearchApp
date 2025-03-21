@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieSearchApp</string>
+    <string name="search_movies">Search movies...</string>
+    <string name="search">Search</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="year">Year</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="_2021">2021</string>
+    <string name="movie_search">Movie Search</string>
+    <string name="movie_search_app">Movie Search App</string>
+    <string name="go_back">Go Back</string>
+    <string name="movie_description_goes_here">Movie description goes here</string>
+    <string name="_8_5">8.5</string>
+    <string name="adventure_comedy_sci_fi">Adventure, Comedy, Sci-Fi</string>
+    <string name="_116_min">116 min</string>
+    <string name="_1985">1985</string>
+    <string name="movie_title2">Movie Title</string>
+    <string name="no_movies_found_try_another_search">No movies found. Try another search.</string>
+</resources>

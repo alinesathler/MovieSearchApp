@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Accent Color -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="status_bar_color">#3700B3</color>
+
+    <!-- Light Theme -->
+    <color name="text_title">#000000</color>  <!-- Black for light theme -->
+    <color name="text_year">#666666</color>    <!-- Dark gray -->
+    <color name="card_background">#F5F5F5</color>
+</resources>
+
+
+
+
+

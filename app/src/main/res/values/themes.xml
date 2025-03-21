@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.MovieSearchApp" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Set Status Bar Icons to White -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

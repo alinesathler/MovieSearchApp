@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme -->
+    <color name="text_title">#FFFFFF</color>  <!-- White for dark theme -->
+    <color name="text_year">#AAAAAA</color>   <!-- Light gray -->
+    <color name="card_background">#2C2C2C</color>
+</resources>
