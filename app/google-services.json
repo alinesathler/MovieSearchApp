@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "113434237705",
+    "project_id": "moviesearchandfavoriteap-aab00",
+    "storage_bucket": "moviesearchandfavoriteap-aab00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113434237705:android:fed72d68ef7b48a51c11d8",
+        "android_client_info": {
+          "package_name": "com.example.moviesearchapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjP4kBSinFS6s3izhk4jt3hXpKqKC8dJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

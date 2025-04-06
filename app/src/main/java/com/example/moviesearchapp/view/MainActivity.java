@@ -1,6 +1,7 @@
 package com.example.moviesearchapp.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -11,9 +12,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.example.moviesearchapp.R;
 import com.example.moviesearchapp.adapter.MovieAdapter;
 import com.example.moviesearchapp.databinding.ActivityMainBinding;
 import com.example.moviesearchapp.viewmodel.MovieViewModel;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
@@ -68,6 +72,27 @@ public class MainActivity extends AppCompatActivity {
             if (hasFocus) {
                 showKeyboard(v);
             }
+        });
+
+        // Navbar
+        binding.bottomNavigationView.setSelectedItemId(R.id.nav_search);
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.nav_search) {
+                // Already on Search screen – do nothing or refresh
+                return true;
+            } else if (id == R.id.nav_favorites) {
+                startActivity(new Intent(this, FavoritesActivity.class));
+                return true;
+            }
+            return false;
+        });
+
+        // Logout
+        binding.logoutButton.setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
         });
     }
 

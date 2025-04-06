@@ -4,6 +4,7 @@
     <color name="purple_500">#6200EE</color>
     <color name="purple_700">#3700B3</color>
     <color name="status_bar_color">#3700B3</color>
+    <color name="white">#FFFFFF</color>
 
     <!-- Light Theme -->
     <color name="text_title">#000000</color>  <!-- Black for light theme -->

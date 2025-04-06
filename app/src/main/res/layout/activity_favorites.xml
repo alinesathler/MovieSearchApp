@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -15,12 +16,12 @@
 
         <!-- App Title -->
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/favoritesTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:paddingVertical="5dp"
-            android:text="@string/movie_search_app"
+            android:text="@string/favorite_movies"
             android:textColor="@color/text_title"
             android:textAlignment="center"
             android:textSize="28sp"
@@ -39,43 +40,9 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/logout"
             android:src="@drawable/ic_logout"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+            app:layout_constraintBaseline_toBaselineOf="@+id/favoritesTitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:tint="@color/text_title" />
-
-
-        <!-- Search Input -->
-        <EditText
-            android:id="@+id/searchEditText"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_edit_text"
-            android:drawableStart="@android:drawable/ic_menu_search"
-            android:drawablePadding="10dp"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:hint="@string/search_movies"
-            android:padding="12dp"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView" />
-
-        <!-- Search Button -->
-        <Button
-            android:id="@+id/searchButton"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_button"
-            android:drawablePadding="8dp"
-            android:elevation="8dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/search"
-            android:textColor="@android:color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/searchEditText" />
 
         <!-- No Results Message -->
         <TextView
@@ -83,25 +50,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/no_movies_found_try_another_search"
+            android:text="@string/favorites_is_empty_please_add_a_movie_to_favorites_first"
+            android:textAlignment="center"
             android:textColor="@color/text_title"
             android:textSize="18sp"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/searchButton" />
+            app:layout_constraintTop_toBottomOf="@id/favoritesTitle" />
 
-        <!-- Movie List -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:paddingTop="10dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/searchButton" />
+            app:layout_constraintTop_toBottomOf="@id/favoritesTitle" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

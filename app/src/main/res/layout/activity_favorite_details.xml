@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_background"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar and Back Button over Poster -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <ImageView
+                android:id="@+id/detailPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/movie_poster"
+                android:background="@drawable/rounded_image_placeholder" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:background="@android:color/transparent"
+                android:title="@string/favorites_details"
+                android:titleTextColor="@android:color/white"
+                android:padding="16dp" />
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/black"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="@string/go_back"
+                android:layout_gravity="top|start"
+                app:tint="@android:color/white" />
+        </FrameLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/movie_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_title" />
+
+        <!-- Info Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/detailYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textColor="@color/text_title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/detailRuntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/_116_min"
+                android:textColor="@color/text_title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/detailGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/genre"
+                android:textColor="@color/text_title"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/_8_5"
+            android:textColor="#FFC107"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="@string/movie_description_goes_here"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:padding="12dp"
+            android:textColor="@color/text_title"
+            android:textSize="16sp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/update"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/delete"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

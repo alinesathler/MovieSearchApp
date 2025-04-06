@@ -16,4 +16,22 @@
     <string name="_1985">1985</string>
     <string name="movie_title2">Movie Title</string>
     <string name="no_movies_found_try_another_search">No movies found. Try another search.</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="favorite_movies">Favorite Movies</string>
+    <string name="favorites">Favorites</string>
+    <string name="studio_name">Studio Name</string>
+    <string name="imdb_rating_8_5">IMDb Rating: 8.5</string>
+    <string name="favorites_details">Favorites Details</string>
+    <string name="genre">Genre</string>
+    <string name="update_description">Update description...</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="favorites_is_empty_please_add_a_movie_to_favorites_first">Favorites is empty. Please add a movie to favorites first.</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login2">Login</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
 </resources>
